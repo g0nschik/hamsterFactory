@@ -70,7 +70,7 @@ class HamsterFactory {
         while (iterator.hasNext()) { 
             Hamster hamster = iterator.next();
             
-            if (hamster.name.contains(name)) {
+            if (hamster.name.equals(name)) {
                 iterator.remove();
                 removed = true;
             }
